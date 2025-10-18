@@ -1,16 +1,12 @@
-# DISABLED AUTO-RUN: Originally triggered on auto-triggers
-# Converted to manual execution only - 2025-10-18
-# Backup available at: version-check.yml.backup
 name: Version Consistency Check
 
 on:
-  workflow_dispatch:  # Manual trigger only
-#   push:
-#     branches:
-#       - main
-#   pull_request:
-#   release:
-#     types: [published]
+  push:
+    branches:
+      - main
+  pull_request:
+  release:
+    types: [published]
 
 jobs:
   github:
